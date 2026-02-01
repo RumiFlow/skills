@@ -1,0 +1,15 @@
+# Secrets (Recursive)
+**/.env
+**/.env.local
+**/credentials.json
+**/secrets.yaml
+
+# System / Cache
+**/.DS_Store
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/venv/
+**/node_modules/
+**/dist/
+**/build/

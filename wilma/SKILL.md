@@ -33,4 +33,3 @@ Requires the shared `.env` file at `/root/.gemini/skills/.env`:
 *   `WILMA_USER`: Username (email).
 *   `WILMA_PASS`: Password.
 *   `WILMA_URL`: URL of the Wilma server (e.g., `https://espoo.inschool.fi`).
-*   `WILMA_APIKEY`: API Key (defaults to common open key).

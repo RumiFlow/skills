@@ -1,0 +1,139 @@
+# Implementation review run
+
+- **Run ID:** `<run-id>`
+- **Status:** `active`
+- **Blocking threshold:** `none` <!-- No severity cutoff; all accepted in-scope findings require resolution unless explicitly overridden. -->
+- **Final review cycle:** `0`
+
+## Objective and scope
+
+- **Plan source:** `<path or prompt>`
+- **Goal:** `Implement the plan completely and carry it through final verification.`
+
+**Constraints and non-goals**
+
+- <constraint or non-goal>
+
+**Assumptions**
+
+- <assumption and evidence>
+
+## Repository baseline
+
+- Repository root: `<path>`
+- Branch: `<branch or detached>`
+- Commit: `<commit>`
+- Pre-existing working-tree changes: `<list or none>`
+- Applicable instructions: `<AGENTS.md paths and other rules>`
+
+| Validation purpose | Command or check | Source |
+|---|---|---|
+<!-- Add targeted, full-regression, build, lint, and other relevant commands. -->
+
+## Acceptance criteria
+
+| ID | Criterion | Status | Evidence |
+|---|---|---|---|
+<!-- Add AC-1, AC-2, ...; use pending, passed, or blocked. -->
+
+## Plan gate
+
+- **Result:** `pending`
+- Material plan revisions: <none or details>
+- Compatibility, migration, rollback, and testability notes: <details>
+
+## Implementation graph
+
+The dependency column is authoritative.
+
+| ID | Objective | Depends on | Outputs/write set | Validation and done condition | Status |
+|---|---|---|---|---|---|
+<!-- Add I-1, I-2, ...; use pending, active, passed, blocked, or superseded. -->
+
+## Integration gate
+
+- **Result:** `pending`
+- Commands/checks and results: <details>
+- Introduced, pre-existing, or environmental failures: <details>
+
+## Review findings
+
+- Review dimensions: <dimensions used>
+- Subagents or sequential fallback: <details>
+
+| ID | Severity | Confidence | Status | Root cause | Summary |
+|---|---|---|---|---|---|
+<!-- Add F-001, F-002, ... only when a concern is reported. -->
+
+<!-- Repeat this block for each finding:
+### F-001 — <title>
+
+- Affected criteria: <AC IDs or none>
+- Evidence: <file/line, test, command output, or complete reasoning>
+- Observed behavior: <details>
+- Expected behavior: <details>
+- Impact: <details>
+- Root-cause hypothesis: <details>
+- Reproduction/validation: <details>
+- Disposition rationale or closure evidence: <details>
+-->
+
+## Root-cause decisions
+
+<!-- Repeat this block for each accepted cluster:
+### RC-01 — <title>
+
+- Findings: <F IDs>
+- Confirmed root cause: <details>
+- Options considered: <details>
+- Selected approach and rationale: <details>
+- Affected contracts/files: <details>
+- Dependencies: <details>
+- Validation and regression plan: <details>
+- Rollout/rollback implications: <details>
+- Skeptical review: <not required, approved, or revisions>
+-->
+
+## Fix graph
+
+The dependency column is authoritative.
+
+| ID | Root cause/findings | Depends on | Selected fix | Validation | Status |
+|---|---|---|---|---|---|
+<!-- Add FIX-01, FIX-02, ... only for accepted repair work. -->
+
+**Ordering rationale:** <dependencies, severity, blast radius, and supersession>
+
+## Verification log
+
+| Phase/node | Command or check | Result | Classification | Evidence |
+|---|---|---|---|---|
+<!-- Classification: passed, introduced failure, pre-existing failure, environmental blocker, or not run. -->
+
+## Final review
+
+- Reviewer(s): <dimensions or sequential fallback>
+- **Result:** `pending`
+- New findings: <none or IDs>
+- Review-cycle notes: <details>
+
+## Completion gate
+
+- [ ] Every acceptance criterion is passed with evidence.
+- [ ] Every implementation and required fix node is passed or superseded with rationale.
+- [ ] Every finding has a final disposition.
+- [ ] No finding remains `investigate` or `open`.
+- [ ] Under `none`, no accepted finding remains `deferred`; with an explicit threshold, none at or above it remains unresolved or deferred.
+- [ ] Every repaired root-cause cluster has targeted validation; `P0`, `P1`, and otherwise high-risk clusters have independent closure evidence.
+- [ ] Every feasible regression check was attempted; no introduced failure remains; pre-existing or environmental failures are evidenced.
+- [ ] Fresh final review found no unresolved defect required by the active completion policy.
+- [ ] Residual risks and unavailable validation are documented.
+
+## Final summary
+
+- Implemented: <summary>
+- Material deviations: <summary or none>
+- Findings: <counts and disposition>
+- Fix order: <summary>
+- Validation: <summary>
+- Residual risks/blockers: <summary or none>

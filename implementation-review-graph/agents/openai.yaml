@@ -1,0 +1,7 @@
+interface:
+  display_name: "Implementation Review Graph"
+  short_description: "Implement, review, repair, and verify plans"
+  default_prompt: "Use $implementation-review-graph. Goal: Implement the plan completely and carry it through final verification. Critically review the result, triage evidence-backed findings, analyze independent fixes in parallel, and apply them sequentially. Use no blocking threshold by default and resolve every accepted in-scope finding."
+
+policy:
+  allow_implicit_invocation: false

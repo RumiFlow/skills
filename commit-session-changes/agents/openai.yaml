@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Session Changes"
+  short_description: "Commit only changes made in this task"
+  default_prompt: "Use $commit-session-changes to stage and commit only the changes made in this task."
